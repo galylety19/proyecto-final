@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PROYECTO SEMBRABDO VIDA</title>
+</head>
+<body>
+	<script type="text/javascript">
+	cont=0;
+	for(var i=1;i<=3;i++)	
+	{
+		var cuenta=prompt("cuenta");
+		var password=prompt("password");
+		if(cuenta!=="profesor" && password!="123")
+		{
+			alert("cuenta o password incorrectos");
+		}
+		if(cuenta == "profesor" && password=="123")
+		{
+			window.location = "./inicio.html";
+			break;
+		}else
+		{
+			cont++;
+alert("datos incorrectos,por favor untento nuevamente");
+if(cont==3)
+{
+	alert("acceso denegado por exeso de intentos")
+}
+}
+}
+	</script>
+</body>
+</html>
